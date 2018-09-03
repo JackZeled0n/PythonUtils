@@ -11,4 +11,14 @@ while i != 1:
         l.append(st[j].lower())
       else:
         l.append(st[j].capitalize())
-    print(''.join(l))
+    f = ''.join(l).split()
+    for k in range(len(f)):
+        if(k == 1):
+            if(f[k] == "date"):
+                print("String " + f[0])
+            if(f[k] == "numeric"):
+                print("BigDecimal " + f[0])
+            if(f[k] == "int"):
+                print("int " + f[0])
+            if(f[k] == "bit"):
+                print("int " + f[0])
